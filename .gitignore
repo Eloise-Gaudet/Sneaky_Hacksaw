@@ -1,0 +1,22 @@
+# big downloaded data and model files (the notebooks download what they need)
+data/
+third_party/
+outputs/
+*.pth
+*.pt
+*.npz
+*.npy
+*.mat
+*.nii
+*.nii.gz
+*.zip
+*.parquet
+*.dcm
+
+# participant initials (private, never commit)
+medsam_glucest/local_ids.json
+
+# Python / Jupyter clutter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

@@ -1,0 +1,20 @@
+# install CPU PyTorch first:  pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+torch>=2.6
+transformers>=4.45
+huggingface_hub
+numpy
+scipy
+pandas
+scikit-image
+nibabel
+matplotlib
+seaborn
+statsmodels
+ipykernel
+jupyter
+nbconvert
+nilearn
+scikit-learn
+h5py
+pyarrow
+gdown

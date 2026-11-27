@@ -15,6 +15,7 @@ FSL FIRST (subcortical) and the JHU white-matter atlas warped to each brain.
 | `notebooks/01b_MedSAM_brain_MRI_demo.ipynb` | MedSAM on a public brain MRI (ICBM152 T1/T2/PD + Harvard-Oxford): EDA, MedSAM vs SAM, box shifts, 3D; where we found the `wanglab` weight problem |
 | `notebooks/02_MedSAM_GluCEST_MS_lesion.ipynb` | **MS lesion UAD**: MedSAM fine-tuned on synthetic lesions in healthy GluCEST, tested on the Subject46 MS lesion (results of `run.py`) |
 | `notebooks/03_cohort_evaluation_GluCEST.ipynb` | 17-participant evaluation, box robustness, single-click 3D, GluCEST corpus-callosum application |
+| `notebooks/04_MedSAM_MS_lesions_GluCEST_NOE.ipynb` | **MedSAM on our MS subjects**, same style as notebook 01: box-prompted lesion segmentation on GluCEST (Subject46 + 4 `MS_five_Sub`) and NOE (5 `MS_five_Sub`) images vs SAM and an ellipse-in-box baseline; EDA of lesion visibility, lesion size, box shifts, sparse 3D markers |
 | `run.py` | trains + tests the MS-lesion model from the terminal (`python run.py [--mode glucest\|regular]`, tqdm progress) |
 | `medsam_glucest/uad.py` | synthetic-lesion training method |
 | `medsam_glucest/model.py` | MedSAM wrapper (official pre-processing, encoder cached per slice, multi-box decoding) |
